@@ -1,0 +1,23 @@
+{
+  "name": "purejs",
+  "version": "0.0.1",
+  "description": "pure function",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mooncatchen/purejs.git"
+  },
+  "keywords": [
+    "pure",
+    "function"
+  ],
+  "author": "mooncatchen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mooncatchen/purejs/issues"
+  },
+  "homepage": "https://github.com/mooncatchen/purejs#readme"
+}
