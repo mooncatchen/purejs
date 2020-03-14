@@ -33,3 +33,32 @@ export function drop(n, arr) {
 export function empty(arr) {
   return len(arr) === 0;
 }
+
+export function map(func, arr) {
+  if (empty(arr)) {
+    return [];
+  }
+
+  func(arr[0])
+  return [func(arr[0]), ...map(func, arr.slice(1))];
+}
+
+export function fold(func, acc, arr) {
+  if (empty(arr)) {
+    return acc;
+  }
+
+  return fold(func, func(acc, arr[0]), arr.slice(1));
+}
+
+export function filter(func, arr) {
+  if (empty(arr)) {
+    return [];
+  }
+
+  if (func(arr[0])) {
+    return [arr[0], ...filter(func, arr.slice(1))];
+  }
+
+  return filter(func, arr.slice(1));
+}
